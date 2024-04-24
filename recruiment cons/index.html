@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruitment Consulting Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.4.3/dist/css/bootstrap.min.css" rel="stylesheet"><!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your custom CSS file for additional styling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo/logo.png" alt="Logo" height="30">
+                Tensketch Careers
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">AboutUs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Career Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="paragraph">
+                        <h2>OUR SERVICES</h2>
+                        <p>In our IT recruitment approach, we specialize in sourcing and selecting candidates with the specific technical skills and expertise required for various IT roles. We go beyond traditional recruitment methods by leveraging our deep understanding of the IT industry and its technologies to identify top talent. Our process includes comprehensive candidate screening, technical assessments, and interviews tailored to each role's requirements. We also focus on cultural fit and alignment with our clients' organizations, ensuring that the candidates we recommend not only have the right technical skills but also match the company's values and work culture. Additionally, we stay abreast of the latest trends and advancements in the IT field to provide our clients with insights and advice on building high-performing IT teams.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="mb-3"></div>
+                    <div class="carousel-container">
+                        <div class="carousel">
+                            <img src="carousel/1.jpg" alt="Slide 1">
+                            <div class="carousel-desc">
+                                <h3>Job Consulting Services</h3>
+                            </div>
+                        </div>
+                        <div class="carousel">
+                            <img src="carousel/2.jpg" alt="Slide 2">
+                            <div class="carousel-desc">
+                                <h3>Job Fair Organization</h3>
+                                
+                            </div>
+                        </div>
+                        <div class="carousel">
+                            <img src="carousel/3.jpg" alt="Slide 2">
+                            <div class="carousel-desc">
+                                <h3>Support for Candidates with Career Gaps</h3>
+                                
+                            </div>
+                        </div>
+                        <div class="carousel">
+                            <img src="carousel/4.jpg" alt="Slide 2">
+                            <div class="carousel-desc">
+                                <h3>Part-time Work-from-home Opportunities</h3>
+                                
+                            </div>
+                        </div>
+                        <div class="carousel">
+                            <img src="carousel/5.jpg" alt="Slide 2">
+                            <div class="carousel-desc">
+                                <h3>Skill Development</h3>
+                                
+                            </div>
+                        </div>
+                        <!-- Add similar markup for the other slides -->
+                        <button class="prev" onclick="prevSlide()">&#10094;</button>
+                        <button class="next" onclick="nextSlide()">&#10095;</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="buttons">
+                        <button class="button" onclick="window.location.href='login1.html';">Hire Talent</button>
+                        <button class="button" onclick="window.location.href='login2.html';">Find a Job</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <section id="service" class="services">
+                        <ul class="row">
+                            <li class="col">
+                                <div class="box gradient-1">
+                                    <img src="images/job_consulting.jpg"  alt="Image 1">
+                                    <div class="content">
+                                        <h2>Job Consulting Services</h2>
+                                        <button class="learn-more" onclick="window.location.href='page1.html';">Learn More</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box gradient-2">
+                                    <img src="images/job_fair.jpg" alt="Image 2">
+                                    <div class="content">
+                                        <h2>Job Fair Organization</h2>
+                                        <button class="learn-more" onclick="window.location.href='page2.html';">Learn More</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box gradient-3">
+                                    <img src="images/career_gaps.jpg" alt="Image 3">
+                                    <div class="content">
+                                        <h2>Support for Candidates with Career Gaps</h2>
+                                        <button class="learn-more" onclick="window.location.href='page3.html';">Learn More</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box gradient-4">
+                                    <img src="images/part_time.jpg" alt="Image 4">
+                                    <div class="content">
+                                        <h2>Part-time Work-from-home Opportunities</h2>
+                                        <button class="learn-more" onclick="window.location.href='page4.html';">Learn More</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box gradient-5">
+                                    <img src="images/skill_development.jpg" alt="Image 5">
+                                    <div class="content">
+                                        <h2>Skill Development</h2>
+                                        <button class="learn-more" onclick="window.location.href='page5.html';">Learn More</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Add similar markup for the other service boxes -->
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <!-- Your existing content here -->
+        </div>
+        <h2>Tensketch Timelines</h2>
+        <div class="container">
+            <div class="timeline-wrapper">
+                <div class="center-line">
+                    <a href="#" class="scroll-icon">
+                        <i class="fas fa-caret-up"></i>
+                    </a>
+                </div>
+                <div class="timeline-row timeline-row-1">
+                    <section>
+                        <i class="icon fas fa-home"></i>
+                        <div class="details">
+                            <span class="title">Establishment</span>
+                            <span>2020</span>
+                        </div>
+                        <p>Tensketch Careers founded with a vision to revolutionize recruitment in the IT sector.</p>
+                        <div class="bottom">
+                            <a href="#">Read More</a>
+                        </div>
+                    </section>
+                </div>
+                <div class="timeline-row timeline-row-2">
+                    <section>
+                        <i class="icon fas fa-star"></i>
+                        <div class="details">
+                            <span class="title">Growth and Expansion</span>
+                            <span>2021</span>
+                        </div>
+                        <p>Expanded services to include job fairs and career counseling for candidates.</p>
+                        <div class="bottom">
+                            <a href="#">Read More</a>
+                        </div>
+                    </section>
+                </div>
+                <div class="timeline-row timeline-row-1">
+                    <section>
+                        <i class="icon fas fa-rocket"></i>
+                        <div class="details">
+                            <span class="title">Industry Recognition</span>
+                            <span>2021</span>
+                        </div>
+                        <p>Recognized as a leading IT recruitment agency, known for its innovative approach.</p>
+                        <div class="bottom">
+                            <a href="#">Read More</a>
+                        </div>
+                    </section>
+                </div>
+                <div class="timeline-row timeline-row-2">
+                    <section>
+                        <i class="icon fas fa-globe"></i>
+                        <div class="details">
+                            <span class="title">Remote Work Solutions</span>
+                            <span>2022</span>
+                        </div>
+                        <p>Launched part-time work-from-home opportunities, adapting to changing work trends.</p>
+                        <div class="bottom">
+                            <a href="#">Read More</a>
+                        </div>
+                    </section>
+                </div>
+                <div class="timeline-row timeline-row-1">
+                    <section>
+                        <i class="icon fas fa-paper-plane"></i>
+                        <div class="details">
+                            <span class="title">Skill Development Initiatives</span>
+                            <span>2023</span>
+                        </div>
+                        <p>Introduced skill development programs, empowering candidates to enhance their abilities.</p>
+                        <div class="bottom">
+                            <a href="#">Read More</a>
+                        </div>
+                    </section>
+                </div>
+                <div class="timeline-row timeline-row-2">
+                    <section>
+                        <i class="icon fas fa-map-marker-alt"></i>
+                        <div class="details">
+                            <span class="title">Future Expansion</span>
+                            <span>Ongoing...</span>
+                        </div>
+                        <p>Continuously expanding services to meet the evolving needs of the IT industry.</p>
+                        <div class="bottom">
+                            <a href="#">Read More</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="whatsapp-box">
+                <div class="whatsapp-details">
+                    <img class="whatsapp-image" src="logo/whatsapp.jpg" alt="WhatsApp Logo">
+                    <div class="whatsapp-content">Contact Here For Enquiry</div>
+                    <div class="whatsapp-number">+91-7010633516</div>
+                    <a href="whatsapp://send?phone=+917010633516&text=Hello%20there!" class="whatsapp-button">Chat with us</a>
+                </div>
+                <div class="whatsapp-form">
+                    <form id="myForm" method="post" action="process_form.php">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="text" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <div class="form-group captcha">
+                            <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY" data-callback="onSubmit"></div>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" onclick="onSubmit()">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="contact" class="bg-dark text-white py-4">
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="mb-3">
+                        <a href="index.html">
+                            <img src="logo/logo.png" alt="Logo" height="30">
+                            <span class="text-white">Tensketch Careers</span>
+                        </a>
+                    </div>
+                    <div>
+                        <h5 class="mb-3">Contact Us</h5>
+                        <p class="mb-1"><a href="tel: +91-7010633516">Phone: +91-7010633516</a></p>
+                        <p class="mb-3"><a href="mailto:info@tensketch.com">Email: info@tensketch.com</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <section>
+                        <h5 class="mt-0">About Us</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="index.html #service">Our Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="aboutus.html">Our Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="aboutus.html">Our Service</a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="col-lg-4">
+                    <section class="text-center mt-4 mt-lg-0">
+                        <h5>Follow Us</h5>
+                        <ul class="list-inline social-media">
+                            <li class="list-inline-item">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/company/tensketch285/mycompany/"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JS Bundle -->
+    <script src="scripts.js"></script> <!-- Your custom JavaScript file -->
+</body>
+</html>

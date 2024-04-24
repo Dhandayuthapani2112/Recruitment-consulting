@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signin/login</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <main>
+        <div class="signup">
+            <span>Not a Member?</span>
+            <button type="button">Sign Up</button>
+        </div>
+        <div class="login">
+            <span>Already Have an Account</span>
+            <button type="button">Login</button>
+        </div>
+        <div class="back-layer">
+            <form action="" class="login-form active">
+                <h2>Login</h2>
+                <label for="1email">Email</label>
+                <input type="email" id="1email" placeholder="person@email.com">
+                <label for="1password">Password</label>
+                <!-- Example HTML structure -->
+                <div class="password-container">
+                    <input type="password" id="password" class="password-input" placeholder="******">
+                    <span class="toggle-password" onclick="togglePasswordVisibility()"></span>
+                </div>
+                
+                
+
+                <div class="remember-me">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                <p><a href="#">Forgot Password?</a></p>
+                <button type="button">Login</button>
+            </form>
+            <form action="" class="signup-form">
+                <h2>Sign up</h2>
+                <label for="f-name">First Name</label>
+                <input type="text" id="f-name" placeholder="First Name">
+                <label for="l-name">Last Name</label>
+                <input type="text" id="l-name" placeholder="Last Name">
+                <label for="semail">Email</label>
+                <input type="email" id="semail" placeholder="person@gmail.com">
+                <label for="spassword">Password</label>
+                <input type="password" id="spassword" placeholder="******">
+                <button type="button">Sign up</button>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

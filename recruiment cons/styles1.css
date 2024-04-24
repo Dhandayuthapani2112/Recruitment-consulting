@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0e031a;
+    font-family: lato, sans-serif;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 100px auto 0;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+main > * {
+    grid-row: 1 / 2;
+}
+
+.login,
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40% 0;
+    color: #fff;
+    font-size: 23px;
+    background-color: rgb(255, 0, 64);
+}
+
+.login > button,
+.signup > button {
+    border: none;
+    background-color: #fff;
+    color: #0e031a;
+}
+
+.login {
+    grid-column: 1 / 2;
+}
+
+.signup {
+    grid-column: 2 / 3;
+}
+
+.login-form {
+    grid-column: 1 / 2;
+    transform: translateX(0); /* Updated from translateX(100%) */
+}
+
+.signup-form {
+    grid-column: 2 / 3;
+    transform: translateX(100%);
+}
+
+form {
+    padding: 30px 20px;
+    max-width: 500px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative; /* Added position relative */
+    transition: transform 0.5s;
+}
+
+form.active {
+    transform: translateX(0);
+}
+
+.back-layer {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    clip-path: inset(0 50% 0 0);
+    background-color: #fff;
+    z-index: 5;
+    transition: clip-path 0.3s;
+}
+
+input {
+    display: block;
+    height: 40px;
+    width: 300px;
+    border-radius: 15px;
+    padding-left: 15px;
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    outline: none;
+}
+
+input:focus {
+    border-color: rgb(255, 0, 64);
+}
+
+label {
+    font-weight: 600;
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 15px;
+    color: rgb(255, 0, 64);
+    width: 120px;
+    height: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgb(255, 0, 64);
+    color: #fff;
+}
+
+/* Your existing CSS */
+
+/* Your existing CSS */
+
+/* Your existing CSS */
+
+/* Your existing CSS */
+
+.password-container {
+    position: relative;
+    display: inline-block;
+}
+
+.password-input {
+    padding-right: 30px; /* Space for the toggle icon */
+    background-image: url('eye-icon.png'); /* Path to your eye icon image */
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 20px; /* Icon size */
+}
+
+.password-container .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #777;
+    background-image: url('eye-icon.png'); /* Path to your eye icon image */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px; /* Icon size */
+    width: 30px; /* Adjust width for icon */
+    height: 30px; /* Adjust height for icon */
+}
+
+
+
+
+
+
+.toggle-password {
+    cursor: pointer;
+    color: #777;
+    position: absolute;
+    right: 5px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.toggle-password:before {
+    content: "\f070";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+}
+
+.toggle-password.visible:before {
+    content: "\f06e";
+}
+
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 5px; /* Adjust margin as needed */
+}
+
+.remember-me input {
+    margin-block-end: 6px;
+    height: 12px; /* Adjust checkbox size */
+    width: 12px; /* Adjust checkbox size */
+}
+
+.remember-me label {
+    color: #777;
+    font-size: 14px;
+    margin-left: 5px;
+}
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+        padding: 0 20px; /* Added padding for better mobile layout */
+    }
+
+    .login,
+    .signup {
+        padding: 20px; /* Adjusted padding for mobile view */
+        width: calc(100% - 40px); /* Set width to 100% minus padding */
+        margin: 10px auto; /* Center the form horizontally */
+    }
+
+    .login-form,
+    .signup-form {
+        max-width: 100%;
+        transform: translateX(0);
+    }
+
+    .back-layer {
+        clip-path: inset(0 50% 0 0); /* Adjust the clip-path for the back-layer */
+    }
+
+    input {
+        width: calc(100% - 30px); /* Set input width to 100% minus padding */
+    }
+
+    button {
+        width: calc(100% - 30px); /* Set button width to 100% minus padding */
+    }
+}
